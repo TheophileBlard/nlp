@@ -160,7 +160,7 @@ class FlueConfig(nlp.BuilderConfig):
     def __init__(
         self, citation, data_url, text_features, **kwargs,
     ):
-        super(FlueConfig, self).__init__(**kwargs)
+        super(FlueConfig, self).__init__(version=nlp.Version("1.0.0"), **kwargs)
         self.citation = citation
         self.data_url = data_url
         self.text_features = text_features
